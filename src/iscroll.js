@@ -299,6 +299,11 @@ iScroll.prototype = {
 			this.scroller.style.top = y + 'px';
 		}
 
+    // ================================================
+    // sent event 
+    $(document).trigger('iscroll', {'x':x, 'y':-y});
+    // ================================================
+
 		this.x = x;
 		this.y = y;
 

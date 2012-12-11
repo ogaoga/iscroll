@@ -2,13 +2,17 @@ $(function(){
   var myScroll;
   // ready
   $(document).ready(function(){
-  	myScroll = new iScroll('wrapper');
+  	myScroll = new iScroll('wrapper',
+                           {bounce: false});
+  });
+  // on load
+  $(window).bind('load', function(e){
+    // refresh iScroll
     myScroll.refresh();
   });
-  // events
+
   $(document)
-    .bind('touchmove', function (e) { e.preventDefault(); }, false)
-    .bind('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false)
+    .bind('touchmove', function (e) { e.preventDefault(); })
     .bind('iscroll', function(e, pos){
       console.log(pos);
       if ( 0 <= pos.y && pos.y < 1000 ) {

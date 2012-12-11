@@ -41,13 +41,12 @@ header {
 	width:100%;
 	padding:0;
 
-  height: 2200px;
+  height: 3000px;
 }
 
 .rainbow {
   height: 50px;
   width: 100%;
-  -webkit-transform: translate3d(320px, 0, 0);
 }
 .b1 {
   background-color: red;
@@ -69,4 +68,13 @@ header {
 }
 .b7 {
   background-color: purple;
+}
+
+.signature { 
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
 }

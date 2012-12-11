@@ -2,7 +2,7 @@ $(function(){
   var myScroll;
   var contentHeight;
   var contentWidth;
-  var points = [1000, 1300, 1556, 2000];
+  var points = [1000, 1300, 1556, 1600];
   var bows;
   var delay = 100;
 
@@ -49,14 +49,9 @@ $(function(){
         $('#wrapper').css('background-color',
                           'rgb('+color+', '+color+', '+color+')');
       }
-      else if ( points[2] <= pos.y && pos.y < points[3] ) {
+      else if ( points[2] <= pos.y ) {
         // show signature
         $('#wrapper').css('background-color', 'white');
-        if ( pos.y - points[2] < contentHeight/2 ) {
-          $('.signature')
-            .css('-webkit-transform',
-                 'translate3d(0, ' + (points[2] - pos.y) + 'px, 0)');
-        }
       }
       else {
       }

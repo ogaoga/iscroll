@@ -2,9 +2,6 @@ body {
 	padding:0;
 	margin:0;
 	border:0;
-}
-
-body {
 	font-size:12px;
 	-webkit-user-select:none;
   -webkit-text-size-adjust:none;
@@ -77,4 +74,8 @@ header {
   position: absolute;
   bottom: 0;
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+a { 
+  text-decoration: none;
 }

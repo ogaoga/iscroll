@@ -6,6 +6,7 @@ body {
 	-webkit-user-select:none;
   -webkit-text-size-adjust:none;
 	font-family: helvetica;
+  background-color: white;
 }
 
 header {
@@ -28,8 +29,17 @@ header {
 	position:absolute; z-index:1;
 	top:45px; bottom: 0; left:0;
 	width:100%;
-	background: white;
 	overflow:auto;
+
+  /* background image */
+  background-image: url("sky.jpg");
+  background-attachment: fixed;
+  background-position: -640px bottom;
+  background-repeat: no-repeat;
+}
+
+#wrapper.sky {
+  background-position: 0px bottom;
 }
 
 #scroller {
@@ -37,13 +47,14 @@ header {
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	width:100%;
 	padding:0;
-
-  height: 2160px;
+  /* page height */
+  height: 2000px;
 }
 
 .rainbow {
-  height: 50px;
+  height: 0px;
   width: 100%;
+  diplay: none;
 }
 .b1 {
   background-color: red;
